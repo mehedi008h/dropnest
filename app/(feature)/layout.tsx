@@ -1,8 +1,12 @@
-import CuponStore from "@/components/home/CuponStore";
-import React from "react";
+"use client";
+import React, { FC } from "react";
 import { BiSearch } from "react-icons/bi";
 
-const StoresPage = () => {
+interface FeatureLayoutProps {
+    children: React.ReactNode;
+}
+
+const FeatureLayout: FC<FeatureLayoutProps> = ({ children }) => {
     return (
         <div className="min-h-screen pt-28">
             <div className="w-[80%] mx-auto flex items-center flex-col">
@@ -14,18 +18,10 @@ const StoresPage = () => {
                         className="bg-transparent w-full rounded-full outline-none"
                     />
                 </div>
-                <div className="w-full grid grid-cols-12 gap-6 my-10">
-                    <CuponStore />
-                    <CuponStore />
-                    <CuponStore />
-                    <CuponStore />
-                    <CuponStore />
-                    <CuponStore />
-                    <CuponStore />
-                </div>
+                {children}
             </div>
         </div>
     );
 };
 
-export default StoresPage;
+export default FeatureLayout;
