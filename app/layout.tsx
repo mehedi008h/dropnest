@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { FloatingShapes } from "@/components/common/FloatingShapes";
 import Header from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
+import ScrollToTop from "@/components/common/ScrollToTop";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const poppins = Poppins({
+    variable: "--font-popiens",
     subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,13 +24,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
+            <body className={`${poppins.className} antialiased`}>
                 <main className="bg-slate-900 min-h-screen text-white overflow-x-hidden">
                     <FloatingShapes />
+                    <ScrollToTop />
                     <Header />
                     {children}
+                    <Footer />
                 </main>
             </body>
         </html>

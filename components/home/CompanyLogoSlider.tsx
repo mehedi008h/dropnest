@@ -7,7 +7,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const CompanyLogoSlider = () => {
     return (
-        <div className="w-[900px] mx-auto mb-10 z-10">
+        <div className="w-[900px] mx-auto mb-6 z-10">
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={30}

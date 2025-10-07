@@ -29,14 +29,17 @@ const CuponStore = () => {
                     Consectetur, error.
                 </p>
 
-                <div className="mt-5 h-10 rounded-md w-full border-dashed border border-neutral-400 flex flex-row justify-between items-center">
+                {/* <div className="mt-5 h-10 rounded-md w-full border-dashed border border-neutral-400 flex flex-row justify-between items-center">
                     <h1 className="w-[50%] text-center text-sm font-medium text-amber-300 leading-10">
                         4f6gg0
                     </h1>
                     <button className="w-[50%] h-full rounded-r-md bg-gradient-to-r from-blue-400 to-cyan-400  text-white font-semibold hover:opacity-90 transition-all duration-300 cursor-pointer">
                         Get Deal
                     </button>
-                </div>
+                </div> */}
+                <button className="w-full text-sm rounded-md mt-4  uppercase cursor-pointer bg-green-500 text-white hover:bg-green-600 font-semibold px-4 py-2 transition-all duration-300 box-price">
+                    Shop Now
+                </button>
             </div>
         </div>
     );

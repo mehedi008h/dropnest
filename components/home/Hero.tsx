@@ -18,7 +18,7 @@ const Hero = () => {
             <AnimatedBadge />
 
             {/* Hero Text Content */}
-            <div className="text-center z-10 px-6 mb-10">
+            <div className="text-center z-10 px-6 mb-5">
                 <div
                     className={`transition-all duration-1000 ${
                         textVisible
@@ -26,7 +26,7 @@ const Hero = () => {
                             : "opacity-0 translate-y-10"
                     }`}
                 >
-                    <h1 className="text-6xl md:text-9xl font-black mb-6 tracking-tight">
+                    <h1 className="text-6xl md:text-9xl font-black mb-4 tracking-tight">
                         <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-pulse">
                             Discount
                         </span>
@@ -34,14 +34,14 @@ const Hero = () => {
                         <span className="text-white">Without Limits</span>
                     </h1>
 
-                    <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-gray-400 mb-4 max-w-3xl mx-auto leading-relaxed">
                         Every coupon is scanned and updated with care by our
                         advanced AI. We remove expired codes, fake links, and
                         shady offers – so you always get working promos 💯
                     </p>
 
                     {/* button  */}
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
                         <Link href="/dashboard">
                             <button className="bg-purple-600 hover:bg-purple-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300">
                                 Get Discount
