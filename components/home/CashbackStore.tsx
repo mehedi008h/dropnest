@@ -4,12 +4,11 @@ import Link from "next/link";
 import { cashbackCompanies } from "@/data/images";
 import { FcCalendar } from "react-icons/fc";
 import { BsCalendarHeart } from "react-icons/bs";
-import Image from "next/image";
 import ShopAd from "./ShopAd";
 
 const CashbackStore = () => {
     return (
-        <div className="h-screen w-full">
+        <div className="min-h-fit w-full">
             <div className="w-[80%] mx-auto py-20 overflow-hidden">
                 <div className="flex flex-row justify-between items-center">
                     <h1 className="text-2xl font-bold font-serif tracking-wider">
